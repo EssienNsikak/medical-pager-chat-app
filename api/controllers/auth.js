@@ -21,7 +21,7 @@ const signup = async (req, res) => {
 
     const token = serverClient.createUserToken(userId);
 
-    res.status(200).json({ token, fullName, username, userId, hashedPassword, phoneNumber });
+    res.status(201).json({ token, fullName, username, userId, hashedPassword, phoneNumber });
   } catch (error) {
     console.log(error);
 
